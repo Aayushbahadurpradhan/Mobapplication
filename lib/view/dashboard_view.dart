@@ -44,9 +44,27 @@ class DashboardView extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, AppRoute.imageRoutes);
+                    Navigator.pushNamed(context, AppRoute.lista);
                   },
-                  child: const Text('image'),
+                  child: const Text('list'),
+                ),
+              ),
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, AppRoute.expand);
+                  },
+                  child: const Text('expanded'),
+                ),
+              ),
+                            SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, AppRoute.grid);
+                  },
+                  child: const Text('grid'),
                 ),
               ),
             ],
